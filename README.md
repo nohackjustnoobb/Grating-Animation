@@ -1,1 +1,1 @@
-# grating_animation
+Hosting a website for grating animation
