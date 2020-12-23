@@ -1,0 +1,72 @@
+body {
+    overflow-x: hidden;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-bottom-width: 3px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+}
+
+.center {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.title img {
+    width: 50px;
+    height: 50px;
+}
+
+#preview_div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    display: flexbox;
+    padding-top: 10px;
+}
+
+#state {
+    color: red;
+    font-size: 25px;
+}
+
+#grating {
+    position: absolute;
+    animation-name: grating;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes grating {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100px;
+    }
+}
+
+.button {
+    color: black;
+    padding: 25px 56px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

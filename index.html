@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grating animation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="extension/style.css">
+    <script src="extension/script.js"></script>
+    <link rel="icon" href="image/icon.png">
+</head>
+
+<body onload="setup()">
+    <div class="title">
+        <img src="image/icon.png"></img>
+        <p>Grating animation</p>
+    </div>
+    <div class="input center">
+        <label>Input Images(png, jpg/jpeg, gif) :</label>
+        <input id="upload_file" type="file" accept=".png, .jpg, .jpeg, .gif" multiple></input>
+        <button onclick="getfiles()">Submit</button>
+    </div>
+    <div id="preview_div" class="center">
+        <canvas id="preview"></canvas>
+        <canvas id="grating"></canvas>
+    </div>
+    <div id="state" class="center"></div>
+    <div id="controller" class="center" style="display: none;">
+        <label for="speed">Animation speed (between 1 to 10): </label>
+        <input id="speed" type="number" name="speed" min="1" max="10" value="1" style="margin-left: 5px;"></input>
+        <button id="reload" style="margin-left: 5px;" onclick="reload()">Reload animation</button>
+    </div>
+    <div id="audio" class="center" style="display: none; margin-top: 5px;">
+        <label>Input Audio(mp3, ogg): </label>
+        <input id="audio_input" style="margin-left: 5px;" type="file" accept=".mp3, .ogg"></input>
+        <button style="margin-left: 5px;" onclick="loadaudio()">Submit</button>
+    </div>
+    <div id="contols" class="center" style="display: flex;margin-top: 5px;"></div>
+    <div id="download_html" class="center" style="display: none;margin-top: 5px;">
+        <button class="button" onclick="generator()">Download as HTML</button>
+    </div>
+</body>
+
+</html>
