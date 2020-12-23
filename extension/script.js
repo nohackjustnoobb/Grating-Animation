@@ -126,6 +126,6 @@ function generator() {
     }
     var preview_image = document.getElementById("preview").toDataURL("image/png");
     var grating_image = document.getElementById("grating").toDataURL("image/png");
-    var html_string = "<!DOCTYPE html><html><head> <title>animation<\/title><style>div{display:flex;justify-content:center;align-content:center;text-align:center;text-decoration:none;}@keyframes grating {0% {left: 0;}100%{left: -1000px;}}<\/style><\/head><body style=\"overflow-x: hidden;\"><div><img src=\""+preview_image+"\"><\/img><img src=\""+grating_image+"\" style=\"position: absolute;animation-name: grating;animation-timing-function: linear;animation-iteration-count: infinite;animation-duration: "+speed+"s;\"><\/img><\/div><div><audio controls autoplay ><source src=\""+audio+"\"><\/audio><\/div><\/body><\/html>";
+    var html_string = "<!DOCTYPE html><html><head> <title>animation<\/title><style>div{display:flex;justify-content:center;align-content:center;text-align:center;text-decoration:none;}@keyframes grating {0% {left: 0;}100%{left: -100px;}}<\/style><\/head><body style=\"overflow-x: hidden;\"><div><img src=\""+preview_image+"\"><\/img><img src=\""+grating_image+"\" style=\"position: absolute;animation-name: grating;animation-timing-function: linear;animation-iteration-count: infinite;animation-duration: "+speed+"s;\"><\/img><\/div><div><audio controls autoplay ><source src=\""+audio+"\"><\/audio><\/div><\/body><\/html>";
     download("animation.html",html_string);
 }
